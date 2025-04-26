@@ -1,0 +1,316 @@
+%-------------------------
+% Resume in Latex
+% Author: Amirhossein Rasoulian
+% Based off of: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{textcomp}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{ragged2e}
+
+\hypersetup{%
+    colorlinks=false,
+    pdfborderstyle={/S/U/W 1},
+    urlbordercolor=gray,
+}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    {\textbf{\textit{#1:}} \small #2 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeItemDate}[2]{
+  \vspace{-2pt}\item\small
+    \begin{tabular*}{0.975\textwidth}[t]{p{0.85\textwidth}@{\extracolsep{\fill}}r}
+      #1 & #2 
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.983\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\textit{#1}} & \small #2 
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\textbf{-}}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=9pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSubItemListStart}{\begin{itemize}[leftmargin=17pt]}
+\newcommand{\resumeSubItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\justify
+
+%-------PERSONAL-INFORMATION--------
+\begin{center}
+    {\Huge \scshape Amirhossein Rasoulian} \\
+    \vspace{1pt}
+    Montreal, QC \\ 
+    \vspace{1pt}
+    
+    \href{mailto:ah.rasoulian@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  ah.rasoulian@gmail.com} ~ 
+    \href{https://www.linkedin.com/in/ah-rasoulian/}{\raisebox{-0.2\height}\faLinkedin\ linkedin.com/in/ah-rasoulian}  ~
+    \href{https://github.com/ah-rasoulian}{\raisebox{-0.2\height}\faGithub\ github.com/ah-rasoulian} ~
+    \href{https://scholar.google.com/citations?user=_TnlwaQAAAAJ&hl=en}{\raisebox{-0.2\height}\faBook\ Google Scholar}
+    \vspace{6pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Master of Computer Science}{Jan 2022 -- Dec 2023}
+            \resumeSubItemListStart
+                \resumeSubItem{\href{https://www.concordia.ca/}{\textbf{Concordia University, Montreal, Canada.}}}
+                \resumeSubItem{\textbf{GPA:} \textbf{4.3}/4.3.}
+                \resumeSubItem{\textbf{Courses:} Deep Learning ($A^+$), Computer Vision ($A^+$), Neuroimage Computing ($A^+$), Medical Image Processing ($A^+$).}
+                \resumeSubItem{\textbf{Thesis:} Cerebrovascular pathology segmentation using weakly supervised deep learning methods.}
+            \resumeSubItemListEnd
+
+        \resumeSubheading {Bachelor of Computer Engineering - Artificial Intelligence}{Sep 2017 -- Sep 2021}
+            \resumeSubItemListStart
+                \resumeSubItem{\href{https://aut.ac.ir/en}{\textbf{Amikabir University of Technology, Tehran, Iran.}}}
+                \resumeSubItem{\textbf{GPA:} \textbf{19.07}/20 (=\textbf{3.98}/4.00).}
+                \resumeSubItem{\textbf{Selected Courses:} Introduction to Bioinformatics (19.49/20), Information Retrieval (20.00/20), Principles and Applications of Artificial Intelligence (20.00/20), Algorithm Design (19.75/20), Applied Linear Algebra (18.70/20), Data Structures and Algorithms (19.25/20), Advanced Programming (19.25/20).}
+                \resumeSubItem{\textbf{Thesis:} Multiple sclerosis lesion detection using deep convolutional networks.}
+        \resumeSubItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%------Working-EXPERIENCE---------
+\section{Work Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Research and Development Engineer in Deep Learning and Image Processing}{Jan 2024 -- Ongoing}
+            \resumeSubItemListStart
+                \resumeSubItem{\href{https://neurorx.com/}{NeuroRx, a leading image-analysis company in the pharmaceutical industry.}}
+                \resumeSubItem{Designed and trained multiple deep-learning models for brain atrophy assessment, ventricles segmentation, multi-atlas corpus-callosum segmentation, and multiple sclerosis phase-rim legion instance segmentation.}
+            \resumeSubItemListEnd
+        \resumeSubheading{Deep Learning and Image Processing Intern}{Aug 2023 -- Dec 2023}
+            \resumeSubItemListStart
+                \resumeSubItem{\href{https://neurorx.com/}{NeuroRx}}
+                \resumeSubItem{Affiliated with Canada Mitacs Globalink Research Internship.}
+                \resumeSubItem{Designed and trained convolutional deep-learning models for contrast-invariant brain/spine detection and MRI super-resolution
+                whose singularity images are being used to pre-process the vast amount of company's raw data.}
+            \resumeSubItemListEnd
+
+        \resumeSubheading{Computer Vision Research Intern}{Nov 2019 -- Sep 2020}
+        \resumeSubItemListStart
+            \resumeSubItem{\href{https://taarlab.com/}{Human and Robot Interaction Laboratory, University of Tehran.}}
+
+            \resumeSubItem{Designed a stand-alone, real-time object tracking software with the capability to gather a comprehensive dataset of agent movement paths.}
+        \resumeSubItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------AWARDS-AND-HONORS------------
+\section{Awards and Honors}
+    \resumeSubHeadingListStart
+        \resumeItemDate{Received Mitacs Accelerate Fellowship.}{2023}
+        % \resumeItemDate{Fonds de recherche du Québec (FRQNT) bursary.}{2022}
+        \resumeItemDate{Granted Split Concordia Merit Scholarship.}{2022}
+        \resumeItemDate{Offered direct admission to M.Sc. in Computer Engineering - Artificial Intelligence at Amirkabir University of Technology, based on academic excellence, bypassing the Nationwide University Entrance Exam.}{2021}
+        \resumeItemDate{Ranked within \textbf{top Ten} students in the Department of Computer Engineering, Amirkabir University of Technology.}{2017 - 2021}
+        \resumeItemDate{Ranked within \textbf{top 0.25\%} in the Nationwide Univesity Entrance Exam for B.Sc. in Mathematics and Engineering, Iran.}{2017}
+        \resumeItemDate{Passed the first stage of Iran’s National Computer Olympiad.}{2015, 2016}
+        \resumeItemDate{Passed the first stage of Iran’s National Mathematical Olympiad.}{2014 - 2016}
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL-SKILLS-----------
+\section{Technical Skills}
+    \resumeSubHeadingListStart
+        \resumeItem{Deep Learning}{Pytorch, Tensorflow, Keras, Transformers, Weakly/Self-supervised Learning.}
+        \resumeItem{Computer Vision}{OpenCV, Torchvision, Scikit-Image.}
+        \resumeItem{Data Science}{Scikit-Learn, Numpy, Pandas, Matplotlib.}
+        \resumeItem{Medical Image Analysis}{Monai, SimpleITK, Nibabel, TorchIO, ANTS, 3D-Slicer, ITK-Snap.}
+        \resumeItem{Programming Languages}{Python, C/C++, Java, Javascript, SQL.}
+        \resumeItem{Other Tools}{Qt, Arduino, VirtualBox, PowerPoint, Excel, Zotero, Latex.}
+        \resumeItem{Operating Systems}{Linux, Windows, MacOS.}
+    \resumeSubHeadingListEnd
+    
+%---------CONFERENCE-PRESENTATIONS-----------
+\section{Conference Presentations}
+    \resumeSubHeadingListStart
+        \resumeSubheading{\textbf{Oral:}}{}
+        \resumeSubItemListStart
+            \resumeSubItem{The 5th MICCAI workshop on Machine Learning in Clinical Neuroimaging (MLCN-2022)}
+            
+        \resumeSubItemListEnd
+    \resumeSubHeadingListEnd
+
+%------PUBLICATIONS----------------
+\section{Publications}
+    \resumeSubHeadingListStart
+        \resumeSubItem{\textbf{A. Rasoulian}, S. Salari, Y. Xiao, "Weakly Supervised Intracranial Hemorrhage Segmentation using Head-Wise Gradient-Infused Self-Attention Maps from a Swin Transformer in Categorical Learning," Machine Learning for Biomedical Imaging (MELBA) Journal, 2023. \textbf{[Invited for MLCN special issue.]}}
+
+        \resumeSubItem{P. Spiegler, \textbf{A. Rasoulian}, Y. Xiao, "Uncertainty-Rectified YOLO-SAM for Weakly Supervised ICH Segmentation"  The 2024 MICCAI Stroke Workshop on Imaging and Treatment Challenges (SWITCH), 2024.}
+
+        \resumeSubItem{A. Harirpoush, \textbf{A. Rasoulian}, M. Kersten-Oertel, Y. Xiao, “Architecture Analysis and Benchmarking of 3D U-shaped Deep Learning Models for Thoracic Anatomical Segmentation,” IEEE Access, 2024.}
+
+        \resumeSubItem{S. Salari, \textbf{A. Rasoulian}, H. Rivaz, Y. Xiao, "FocalErrorNet: Uncertainty-aware focal modulation network for inter-modal registration error estimation in ultrasound-guided neurosurgery," Medical Image Computing and Computer Assisted Intervention – MICCAI 2023. \textbf{[Early acceptance, top 13\% of submissions]}}
+
+        \resumeSubItem{S. Salari, \textbf{A. Rasoulian}, H. Rivaz, Y. Xiao, "Towards multi-modal anatomical landmark detection for ultrasound-guided brain tumor resection with contrastive learning," Medical Image Computing and Computer Assisted Intervention – MICCAI 2023.}
+
+        \resumeSubItem{\textbf{A. Rasoulian}, S. Salari, Y. Xiao, "Weakly Supervised Intracranial Hemorrhage Segmentation using Hierarchical Combination of Attention Maps from a Swin Transformer," the 5th MICCAI workshop on Machine Learning in Clinical Neuroimaging (MLCN), 2022.}
+
+        \resumeSubItem{\textbf{A. Rasoulian}, S. Salari, Y. Xiao, "Weakly supervised segmentation of intracranial aneurysms using a 3D focal modulation UNet," ArXiv:2308.03001, 2023.}
+        
+        \resumeSubItem{S. Salari, \textbf{A. Rasoulian}, M. Battie, M. Fortin, H. Rivaz, Y. Xiao, "Uncertainty-aware transformer model for anatomical landmark detection in paraspinal muscle MRIs,"  SPIE Medical Imaging, 2023. \textbf{[Image Processing Best Student Paper Award]}}
+
+        \resumeSubItem{S. Salari, \textbf{A. Rasoulian}, H. Rivaz, Y. Xiao, “Dense error map estimation for MRI-ultrasound registration in brain tumor surgery using Swin UNETR,” The 2023 International Ultrasound Symposium, accepted, 2023.}
+
+    \resumeSubHeadingListEnd
+
+
+%-------TEACHING-EXPERIENCE--------
+\section{Teaching Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Teaching Assistant, Concordia University}{May 2022 -- Dec 2023}
+        \resumeSubItemListStart
+            \resumeSubItem{\textbf{Courses:} Image Processing, Probability and Statistics for Computer Science, Program and Problem Solving, Data Structures and Algorithms, Computer Networks and Protocols, Data Communication and Computer Networks, Object-Oriented Programming I, Object-Oriented Programming II.}
+        \resumeSubItemListEnd
+        
+        \resumeSubheading{Teaching Assistant, Amirkabir University of Technology}{Mar 2020 -- Aug 2021}
+        \resumeSubItemListStart
+            \resumeSubItem{\textbf{Courses:} Principles and Applications of Artificial Intelligence (Head-TA), Research and Presentation in Engineering.}
+        \resumeSubItemListEnd
+    \resumeSubHeadingListEnd
+
+%------------------PROJECTS----------------
+\section{Selected Projects}
+    \resumeSubHeadingListStart
+        \resumeItem{\href{https://github.com/HealthX-Lab/HGI-SAM}{HGI-SAM}}{Developed and trained an innovative weakly-supervised model leveraging image-level labels and Swin transformer, achieving exceptional accuracies of 94\%+ in detection and 44\%+ in segmentation for challenging brain hemorrhage lesions, surpassing the performance of the fully-supervised U-Net.}
+
+        \resumeItem{FocalSegNet}{Developed and trained a novel weakly-supervised model, utilizing coarse annotations, focal modulation, and conditional random fields to achieve precise segmentation of the complex brain aneurysm pathology, yielding 80\%+ sensitivity and 67\%+ dice (paper in submission).}
+
+        \resumeItem{\href{https://github.com/ah-rasoulian/PairwiseLocalAlignment}{Bioinformatics basic package}}{Implemented a diverse set of nucleotide sequence processing algorithms operating pairwise local alignment, multiple sequence alignment, profiling, calculating tree parsimony score, and protein regular expression matching.}
+        
+        \resumeItem{\href{https://github.com/ah-rasoulian/SearchEngine}{Search Engine}}{Implemented a searching motor capable of listing ordered query-relevant documents and sentences in the database, leveraging tf-idf-ranked search and clustered-based search techniques.}
+
+        \resumeItem{\href{https://github.com/ah-rasoulian/JavaDownloadManager}{Download Manager}}{Implemented a robust Java-based download manager featuring a user-friendly graphical interface, offering advanced functionalities such as concurrent multiple downloads, pause/resume/cancel capabilities, scheduled downloading, running in background, etc.}
+
+        \resumeItem{\href{https://github.com/ah-rasoulian/BallTracker}{Ball Tracker}}{Developed a graphical user interface program that connects to a camera, enabling real-time ball tracking and dynamic display of its precise location.}
+        
+        \resumeItem{Email Management System}{Developed a comprehensive email management database integrated with a command-line user interface.}
+        
+        \resumeItem{\href{https://github.com/ah-rasoulian/BattleTanks}{Battle-Tanks}}{Developed a graphical 2D strategic game with multiplayer support, where players control tanks, and navigate to the final objective while engaging various enemy tanks.}
+
+        \resumeItem{\href{https://github.com/ah-rasoulian/MahShop}{MahShop}}{Designed and developed a dynamic shopping website with user profiles, categorized item listings, and sorting options by name or price.}
+        
+    \resumeSubHeadingListEnd
+
+%-----------LICENSES-AND-CERTIFICATES------------
+\section{Licenses and Certificates}
+    \resumeSubHeadingListStart
+        \resumeItemDate{\href{https://www.coursera.org/account/accomplishments/specialization/certificate/A97E27JQA2XB}{TensorFlow Developer Specialization}, DeepLearning.AI.}{Apr 2021}
+        \resumeItemDate{\href{https://www.coursera.org/account/accomplishments/certificate/BSDRRPRRGM54}{Data Science in Stratified Healthcare and Precision Medicine}, University of Edinburgh.}{Apr 2021}
+    \resumeSubHeadingListEnd
+
+%---------Languages-----------
+\section{Languages}
+    \resumeSubHeadingListStart
+        \resumeSubItem{\textbf{English:} Fluent.}
+        \resumeSubItem{\textbf{Persian:} Native.}
+    \resumeSubHeadingListEnd
+
+%----------References-------------
+\section{References}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Dr. Yiming Xiao}{}
+                \resumeSubItemListStart
+                    \resumeSubItem{Assistant Professor, Dept. of Computer Science and Software Engineering, Concordia University.}
+                    \resumeSubItem{\href{mailto:yiming.xiao@concordia.ca}{yiming.xiao@concordia.ca}.}
+                \resumeSubItemListEnd
+        \resumeSubheading{Dr. Haz-Edine Assemlal}{}
+                \resumeSubItemListStart
+                    \resumeSubItem{Associate Director, Dept. of Machine Learning and Image Processing, NeuroRx Research.}
+                    \resumeSubItem{\href{mailto:hassemlal@neurorx.com}{hassemlal@neurorx.com}.}
+                \resumeSubItemListEnd
+        \resumeSubheading{Dr. Hassan Rivaz}{}
+                \resumeSubItemListStart
+                    \resumeSubItem{Professor, Dept. of Electrical and Computer Engineering, Concordia University.}
+                    \resumeSubItem{\href{mailto:hrivaz@ece.concordia.ca}{hrivaz@ece.concordia.ca}.}
+                \resumeSubItemListEnd
+        \resumeSubheading{Dr. Reza Safabakhsh}{}
+                \resumeSubItemListStart
+                    \resumeSubItem{Professor, Dept. of Computer Engineering, Amirkabir University of Technology (Tehran Polytechnic).}
+                    \resumeSubItem{\href{mailto:safa@aut.ac.ir}{safa@aut.ac.ir}.}
+                \resumeSubItemListEnd
+        \resumeSubheading{Dr. Aiman Hanna}{}
+                \resumeSubItemListStart
+                    \resumeSubItem{Senior Lecturer, Dept. of Computer Science and Software Engineering, Concordia University.}
+                    \resumeSubItem{\href{mailto:contact@aimanhanna.com}{contact@aimanhanna.com}.}
+                \resumeSubItemListEnd
+    \resumeSubHeadingListEnd
+    
+\end{document}
